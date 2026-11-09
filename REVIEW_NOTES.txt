@@ -1,0 +1,18 @@
+Rock Limited official website master, November 7, 2026.
+Includes five blog updates for November 3–7, alternating executive and commercial aviation.
+Extract the entire ZIP before opening index.html. Keep all files and paths together.
+Vercel serves the security headers defined in vercel.json. If either executable inline script in index.html changes, regenerate its SHA-256 hash and update the corresponding script-src entry before deploying.
+The inquiry form offers an email draft for attachments and supports direct submission when configured.
+
+The homepage links to the historical blog archive in blog/archive.html. Set each archive article’s publication date to its actual publication date when it goes live. Keep the market snapshot date separate.
+
+Enhancements included in the master
+- The About section introduces Kent Stern, Managing Partner, below the existing introduction video in a smaller About Me section. The copy uses the approved name and title and the service descriptions already on the site.
+- The royal-blue Inquiries button uses a lighter shade to improve contrast.
+- Kim's video has an English caption track and begins loading on playback. The two footer images now use WebP.
+- The inquiry section adds direct submission through a Vercel function when configured. The email draft remains available for attachments and for local viewing.
+- The email draft includes instructions for attaching files.
+- The existing blog and archive content were carried forward.
+
+Hosted inquiry setup
+Set RESEND_API_KEY, INQUIRY_FROM, TURNSTILE_SITE_KEY, and TURNSTILE_SECRET_KEY as server-side Vercel environment variables. Use a sender at a domain verified by Resend. Authorize rocklimitedai.com and www.rocklimitedai.com on the Turnstile widget. The inquiry endpoint accepts submissions only from those HTTPS origins, and the configured destination is sales@rocklimitedai.com. Verify delivery to that mailbox with an authorized end-to-end test before relying on direct submission. The website confirms provider acceptance. Mailbox delivery is a separate check.
