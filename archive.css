@@ -1,0 +1,28 @@
+:root{color-scheme:dark;--ink:#080e18;--panel:#101b2a;--line:#26354a;--gold:#f4d49c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:#f5f6f8;font:1rem/1.65 Arial,Helvetica,sans-serif}
+.wrap{width:min(100% - 2.5rem,60rem);margin-inline:auto}
+.site-header{background:#050910;border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-block:1rem}
+.site-header img{display:block;width:min(250px,65vw);height:auto}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem}
+main{padding-block:2.75rem 3.5rem}
+footer{padding-block:1.5rem;border-top:1px solid var(--line)}
+h1,h2,h3{line-height:1.15}
+h1{font-size:clamp(2rem,5vw,3.5rem);margin:.25em 0 .55em}
+h2{font-size:1.6rem;margin-top:2.25rem}
+h3{font-size:1.15rem;margin:0 0 .75rem}
+a{color:var(--gold);text-underline-offset:.2em;overflow-wrap:anywhere}
+a:focus-visible{outline:2px solid white;outline-offset:4px}
+.eyebrow{color:var(--gold);font-size:.8rem;letter-spacing:.13em;text-transform:uppercase;font-weight:bold}
+.intro,.meta{color:#bdcad9}
+.month{padding:1rem 1.25rem;margin-bottom:.75rem;border:1px solid var(--line);border-radius:.5rem;background:var(--panel)}
+.month ul{list-style:none;padding:0;margin:0}
+.month li{margin-block:.4rem}
+.month small{display:block;color:#bdcad9}
+article{max-width:72ch}
+article p{margin-block:1rem}
+
+.blogcard{max-width:none;margin:0 0 1rem;padding:1rem 1.25rem;border:1px solid var(--line);border-radius:.5rem;background:var(--panel)}
+.blogcard time,.blogcard .smallcaps{color:#bdcad9;font-size:.9rem}
+.blogcard h3{margin-top:.5rem}
